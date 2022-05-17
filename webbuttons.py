@@ -41,7 +41,7 @@ class WebButtonControl:
 
         isActive = True
 
-    def button_callback(channel):
+    def button_callback(self, channel):
         subprocess.call(["xdotool", "search", "--onlyvisible", "--class", "Chromium", "windowactivate"])
         if (channel == 32):
             # 1 = W
